@@ -1,7 +1,7 @@
 import Login from "../components/Login";
 import Googlesignup from "../components/Googlesignup";
-import Passwordlabel from "../components/passwordlabel";
 import { Link } from "react-router-dom";
+import Passwordlabel from "../components/Passwordlabel";
 export default function Loginpage() {
   return (
     <>
@@ -37,7 +37,7 @@ export default function Loginpage() {
             Forgot Password?
           </Link>
         </div>
-        <Passwordlabel />
+        <Passwordlabel/>
         {/* check box */}
         <div className="mt-8 pb-4">
           <input id="Keep me signed in" type="checkbox" />
