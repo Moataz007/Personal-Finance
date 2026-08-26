@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@theme {
+    --color-white-8:#FFFFFF14;
+    --color-white-75:#FFFFFF14;
+}
