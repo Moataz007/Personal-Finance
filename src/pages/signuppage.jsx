@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Googlesignup from "../components/Googlesignup";
-import Passwordlabel from "../components/passwordlabel";
 import Signup from "../components/Signup";
+import Passwordlabel from "../components/passwordlabel";
 
 export default function Signuppage() {
   return (
@@ -28,7 +28,7 @@ export default function Signuppage() {
               <div className="flex justify-between pt-7">
                 <p className="small-word font-medium text-[#191D23] text-[16px] dark:text-[#4B5768]">Password</p>
               </div>
-              <Passwordlabel/>
+              <Passwordlabel />
               <div className="mt-8">
               <p className="small-word font-light text-[14px] leading-5 text-[#4B5768] pb-5">By continuing, you agree to our <span className="font-normal text-[#299D91]">terms of service.</span></p>
               <Signup/>
