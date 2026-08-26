@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Googlesignup from "../components/Googlesignup";
 import Signup from "../components/Signup";
-import Passwordlabel from "../components/passwordlabel";
+import Passwordlabel from "../components/Passwordlabel";
 
 export default function Signuppage() {
   return (
