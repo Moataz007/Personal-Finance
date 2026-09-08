@@ -15,7 +15,7 @@ import {
 export default function Slidenav() {
   return (
     <>
-      <aside className="flex flex-col bg-[#191919] dark:ml-3 mr-6 mb-3 mt-3 py-12 px-7 w-fit">
+      <aside className="flex flex-col bg-[#191919] dark:ml-3 mr-6 mb-3 mt-3 py-12 px-7 w-fit sm:hidden lg:block">
         {/* menu componant */}
         <div className="flex flex-col justify-center text-[#FFFFFFB2]">
           <p className="big-word text-[40px] tracking-[8%] text-white font-extrabold pb-10">
@@ -25,34 +25,45 @@ export default function Slidenav() {
             </span>
             IO
           </p>
-          <div className="flex gap-3 bg-[#299D91] h-full mb-4 py-3">
+          {/* Overview */}
+          <button>
+            <Link to="/Home" className="flex gap-3 bg-[#299D91] h-full mb-4 py-3 cursor-pointer">
             <LayoutGrid />
             <p className="small-word text-white">Overview</p>
-          </div>
-          <div className="flex gap-3 h-full mb-4 py-3">
+            </Link>
+          </button>
+          {/* Transactions */}
+          <button>
+          <Link to="/Transactions" className="flex gap-3 h-full mb-4 py-3 cursor-pointer">
             <Wallet />
             <p className="small-word">Transactions</p>
-          </div>
-          <div className="flex gap-3 h-full mb-4 py-3">
+          </Link>
+          </button>
+          {/* Balances */}
+          <button className="flex gap-3 h-full mb-4 py-3 cursor-pointer">
             <ArrowLeftRight />
             <p className="small-word pb-4">Balances</p>
-          </div>
-          <div className="flex gap-3 h-full mb-4 py-3">
+          </button>
+          {/* Bills */}
+          <button className="flex gap-3 h-full mb-4 py-3 cursor-pointer">
             <Receipt />
             <p className="small-word pb-4">Bills</p>
-          </div>
-          <div className="flex gap-3 h-full mb-4 py-3">
+          </button>
+          {/* Expenses */}
+          <button className="flex gap-3 h-full mb-4 py-3 cursor-pointer">
             <HandCoins />
             <p className="small-word pb-4">Expenses</p>
-          </div>
-          <div className="flex gap-3 h-full mb-4 py-3">
+          </button>
+          {/* Goals */}
+          <button className="flex gap-3 h-full mb-4 py-3 cursor-pointer">
             <Goal />
             <p className="small-word pb-4">Goals</p>
-          </div>
-          <div className="flex gap-3 h-full mb-4 py-3">
+          </button>
+          {/* Settings */}
+          <button className="flex gap-3 h-full mb-4 py-3 cursor-pointer">
             <Settings />
             <p className="small-word pb-4">Settings</p>
-          </div>
+          </button>
         </div>
         {/* logout and Avatar */}
         <div className="lg:mt-57 md:mt-36 ">
@@ -62,20 +73,22 @@ export default function Slidenav() {
         </Link>
         <div className="flex items-center gap-3 py-8">
           {/* PHOTO */}
-        <div className="avatar">
+        <button className="avatar cursor-pointer">
           <div className="w-24 rounded-full">
             <img src="/avatar.jpg" />
           </div>
-        </div>
+        </button>
         {/* TEXT UNDER PHOTO */}
         <div className="pr-3">
-          <p className="text-white font-semibold">Tanzir Rahman</p>
-          <p className="text-white/70 font-normal">View profile</p>
+          <button className="text-white font-semibold cursor-pointer">Tanzir Rahman</button>
+          <button className="text-white/70 font-normal cursor-pointer">View profile</button>
         </div>
+        {/* 3 dots */}
+        <button className="cursor-pointer">
         <EllipsisVertical className="text-white"/>
+        </button>
         </div>
         </div>
-
       </aside>
     </>
   );

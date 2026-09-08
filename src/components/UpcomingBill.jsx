@@ -17,7 +17,7 @@ export default function UpcomingBill() {
                 {/* date */}
                 <div className="flex flex-col bg-[#D2D2D240] inter-font p-4 rounded-lg">
                   <p className="text-[#666666] font-medium text-[12px]">May</p>
-                  <p className="font-extrabold text-[22px]">15</p>
+                  <p className="font-extrabold text-[22px] text-black">15</p>
                 </div>
                 {/*details*/}
                 <div>
@@ -30,11 +30,13 @@ export default function UpcomingBill() {
                   <p className="text-[#525256] font-bold text-[16px]">$150</p>
                 </div>
               </div>
+              {/* ------------------------------ */}
+              {/* second proccess */}
               <div className="flex justify-between pt-3 items-center inter-font">
                 {/* date */}
                 <div className="flex flex-col bg-[#D2D2D240] inter-font p-4 rounded-lg">
                   <p className="text-[#666666] font-medium text-[12px]">Jun</p>
-                  <p className="font-extrabold text-[22px]">16</p>
+                  <p className="font-extrabold text-[22px] text-black">16</p>
                 </div>
                 {/*details*/}
                 <div>

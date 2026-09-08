@@ -11,7 +11,7 @@ export default function Goals() {
               <div className="flex justify-between items-center border-b border-[#F3F3F3] pb-3 mb-5">
                 <div className="flex gap-18">
                 <p className="inter-font font-extrabold text-[22px] text-[#191919] size-8">$20,000</p>
-                <button>
+                <button className="cursor-pointer">
                   <PencilLine size={32} className="bg-[#D2D2D240] text-[#525256] rounded-sm p-1" />
                 </button>
                 </div>
@@ -24,7 +24,7 @@ export default function Goals() {
                     <PiMedalMilitaryLight className="mt-0.75 " />
                     <div>
                     <p className="font-normal text-[15px] pb-1.5 text-[#878787]">Target Achieved</p>
-                    <p className="font-bold text-[19px]">$12,500</p>
+                    <p className="font-bold text-[19px] text-black">$12,500</p>
                     </div>
                   </div>
                   {/* this month target */}
@@ -32,7 +32,7 @@ export default function Goals() {
                     <GoGoal className="mt-0.75"/>
                     <div>
                     <p className="font-normal text-[15px] pb-1.5 text-[#878787]">This month Target</p>
-                    <p className="font-bold text-[19px]">$20,000</p>
+                    <p className="font-bold text-[19px] text-black">$20,000</p>
                     </div>
                   </div>
                 </div>

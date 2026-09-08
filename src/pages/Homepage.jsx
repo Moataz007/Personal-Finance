@@ -1,6 +1,9 @@
-import Cards from "../components/Cards";
+import CardsDashboard from "../components/CardsDashboard";
+import Expensesbreakdown from "../components/Expensesbreakdown";
 import Navbar from "../components/Navbar";
+import Recenttransaction from "../components/Recenttransaction";
 import Slidenav from "../components/Slidenav";
+import Statics from "../components/Statics";
 
 export default function Homepage() {
   return (
@@ -10,7 +13,15 @@ export default function Homepage() {
         <Slidenav/>
         <div className="w-full">
         <Navbar />
-        <Cards/>
+        <CardsDashboard/>
+        <div className="mt-8 gap-x-6 flex items-center wrap">
+        <Recenttransaction/>
+        <div className="w-full">
+        <Statics/>
+        <Expensesbreakdown/>
+        </div>
+        
+        </div>
         </div>
       </div>
     </>

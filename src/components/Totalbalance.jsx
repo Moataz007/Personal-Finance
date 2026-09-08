@@ -5,7 +5,7 @@ export default function Totalbalance() {
   return (
     <>
       <div className="w-full">
-        <p className="inter-font font-normal text-[27px] text-[#878787] ">
+        <p className="inter-font font-normal text-[27px] text-[#878787]">
           Total Balance
         </p>
         <div className="bg-white w-full py-5 px-6 rounded-lg">
@@ -13,9 +13,9 @@ export default function Totalbalance() {
             <p className="inter-font font-extrabold text-[22px] text-[#191919] size-8">
               $240,399
             </p>
-            <p className="inter-font font-medium text-[14px] text-[#525256]">
+            <button className="inter-font font-medium text-[14px] text-[#525256] cursor-pointer">
               All Accounts
-            </p>
+            </button>
           </div>
           {/* credit card */}
           <div className="flex bg-[#299D91] rounded-lg p-4 justify-between mt-3">
@@ -38,19 +38,19 @@ export default function Totalbalance() {
           {/* next and previous */}
           <div className="mt-5 flex justify-between items-center">
             <div className="text-[#D1D1D1] flex gap-1">
-              <button>
+              <button className="flex cursor-pointer">
               <ChevronLeft/>
-              </button>
               <p>Previous</p>
+              </button>
             </div>
             <div className="flex gap-1.5">
               <div className="rounded-full bg-[#299D91] w-2 h-2"></div>
               <div className="rounded-full bg-[#D1D1D1] w-2 h-2"></div>
               <div className="rounded-full bg-[#D1D1D1] w-2 h-2"></div>
             </div>
-            <div className=" flex gap-1">
+            <div className="gap-1 text-black">
+              <button className="flex cursor-pointer">
               <p>Next</p>
-              <button>
               <ChevronRight/>
               </button>
             </div>
