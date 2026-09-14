@@ -1,6 +1,6 @@
 import { ChevronRight } from "lucide-react";
 import { FaCcVisa } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import Detailsbutton from "./Detailsbutton";
 
 
 export default function CardsBalance() {
@@ -73,10 +73,7 @@ export default function CardsBalance() {
             {/* actions */}
             <div className=" flex items-center justify-between">
                 <button className="text-[#299D91] text-[16px] font-normal cursor-pointer">Remove</button>
-                <Link to="/CheckingAccountDetails" className="flex items-center bg-[#299D91] py-2 px-5 rounded-sm gap-2 cursor-pointer">
-                    <p className="text-[14px] text-white font-medium">Details</p>
-                    <ChevronRight color="#ffffff"/>
-                </Link>
+                <Detailsbutton/>
             </div>
             </div>
             {/* savings */}

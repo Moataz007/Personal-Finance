@@ -10,7 +10,7 @@ export default function Notfound() {
         <div>
 
         <span className="font-black text-[30px]">Go to </span>
-        <Link className="font-black text-[30px] text-green-500" to="/login" >Home</Link>
+        <Link className="font-black text-[30px] text-green-500" to="/" >Home</Link>
         </div>
       </div>
     

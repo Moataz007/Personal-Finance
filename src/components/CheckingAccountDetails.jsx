@@ -33,6 +33,7 @@ export default function CheckingAccountDetails() {
             <button className=" text-[#666666] text-[14px] font-semibold cursor-pointer">Remove</button>
             </div>
         </div>
+        {/* Transactions History */}
         <p className="inter-font font-normal text-[22px] text-[#878787] mb-4">Transactions History</p>
         <div className="table-fixed text-center pt-8 pl-8 pr-8 pb-10 font-normal text-[16px] text-[#9F9F9F] bg-white rounded-lg mr-6">
         <table className="table-fixed text-center w-full mb-8">

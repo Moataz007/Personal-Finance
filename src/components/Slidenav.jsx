@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../style/home.css";
 import {
   ArrowLeftRight,
@@ -27,47 +27,100 @@ export default function Slidenav() {
           </p>
           {/* Overview */}
           <button>
-            <Link to="/Home" className="flex gap-3 bg-[#299D91] h-full mb-4 py-3 cursor-pointer">
+            <NavLink to="/Home"
+             className={({ isActive }) =>
+            `flex gap-3 hover:bg-[#299D91] h-full mb-4 py-3 cursor-pointer ${
+            isActive
+             ? "bg-[#299D91] text-white"
+             : "text-[#FFFFFFB2]"
+            }`
+            }>
             <LayoutGrid />
-            <p className="small-word text-white">Overview</p>
-            </Link>
+            <p className="small-word">Overview</p>
+            </NavLink>
+          </button>
+          {/* Balances */}
+          <button>
+            <NavLink to="/Balances" className={({ isActive }) =>
+            `flex gap-3 hover:bg-[#299D91] h-full mb-4 py-3 cursor-pointer ${
+            isActive
+             ? "bg-[#299D91] text-white"
+             : "text-[#FFFFFFB2]"
+            }`
+            }>
+            <ArrowLeftRight />
+            <p className="small-word">Balances</p>
+          </NavLink>
           </button>
           {/* Transactions */}
           <button>
-          <Link to="/Transactions" className="flex gap-3 h-full mb-4 py-3 cursor-pointer">
+          <NavLink to="/Transactions" className={({ isActive }) =>
+            `flex gap-3 hover:bg-[#299D91] h-full mb-4 py-3 cursor-pointer ${
+            isActive
+             ? "bg-[#299D91] text-white"
+             : "text-[#FFFFFFB2]"
+            }`
+            }>
             <Wallet />
             <p className="small-word">Transactions</p>
-          </Link>
-          </button>
-          {/* Balances */}
-          <button className="flex gap-3 h-full mb-4 py-3 cursor-pointer">
-            <ArrowLeftRight />
-            <p className="small-word pb-4">Balances</p>
+          </NavLink>
           </button>
           {/* Bills */}
-          <button className="flex gap-3 h-full mb-4 py-3 cursor-pointer">
+          <button>
+            <NavLink to="/Bills" className={({ isActive }) =>
+            `flex gap-3 hover:bg-[#299D91] h-full mb-4 py-3 cursor-pointer ${
+            isActive
+             ? "bg-[#299D91] text-white"
+             : "text-[#FFFFFFB2]"
+            }`
+            }>
             <Receipt />
-            <p className="small-word pb-4">Bills</p>
+            <p className="small-word">Bills</p>
+          </NavLink>
           </button>
           {/* Expenses */}
-          <button className="flex gap-3 h-full mb-4 py-3 cursor-pointer">
+          <button>
+            <NavLink to="/Transactions" className={({ isActive }) =>
+            `flex gap-3 hover:bg-[#299D91] h-full mb-4 py-3 cursor-pointer ${
+            isActive
+             ? "bg-[#299D91] text-white"
+             : "text-[#FFFFFFB2]"
+            }`
+            }>
             <HandCoins />
-            <p className="small-word pb-4">Expenses</p>
+            <p className="small-word active:text-white">Expenses</p>
+          </NavLink>
           </button>
           {/* Goals */}
-          <button className="flex gap-3 h-full mb-4 py-3 cursor-pointer">
+          <button>
+            <NavLink to="/Transactions" className={({ isActive }) =>
+            `flex gap-3 hover:bg-[#299D91] h-full mb-4 py-3 cursor-pointer ${
+            isActive
+             ? "bg-[#299D91] text-white"
+             : "text-[#FFFFFFB2]"
+            }`
+            }>
             <Goal />
-            <p className="small-word pb-4">Goals</p>
+            <p className="small-word active:text-white">Goals</p>
+          </NavLink>
           </button>
           {/* Settings */}
-          <button className="flex gap-3 h-full mb-4 py-3 cursor-pointer">
+          <button>
+            <NavLink to="/Transactions" className={({ isActive }) =>
+            `flex gap-3 hover:bg-[#299D91] h-full mb-4 py-3 cursor-pointer ${
+            isActive
+             ? "bg-[#299D91] text-white"
+             : "text-[#FFFFFFB2]"
+            }`
+            }>
             <Settings />
-            <p className="small-word pb-4">Settings</p>
+            <p className="small-word active:text-white">Settings</p>
+          </NavLink>
           </button>
         </div>
         {/* logout and Avatar */}
         <div className="lg:mt-57 md:mt-36 ">
-        <Link to="/login" className="flex gap-3 py-3 pl-3 mb-11 bg-white-8 opacity-75 ">
+        <Link to="/login" className="flex gap-3 active:bg-[#299D91] hover:bg-[#299D91] py-3 pl-3 mb-11 bg-white-8 opacity-75 ">
           <LogIn className="text-white"/>
           <p className="small-word text-white">Logout</p>
         </Link>
@@ -81,14 +134,15 @@ export default function Slidenav() {
         {/* TEXT UNDER PHOTO */}
         <div className="pr-3">
           <button className="text-white font-semibold cursor-pointer">Tanzir Rahman</button>
-          <button className="text-white/70 font-normal cursor-pointer">View profile</button>
+          <button className="text-white/70 font-normal hover:bg-gray-400 cursor-pointer">View profile</button>
         </div>
         {/* 3 dots */}
-        <button className="cursor-pointer">
+        <button className="cursor-pointer hover:bg-gray-400 rounded-full">
         <EllipsisVertical className="text-white"/>
         </button>
         </div>
         </div>
+        
       </aside>
     </>
   );

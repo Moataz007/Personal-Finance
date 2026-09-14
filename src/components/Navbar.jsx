@@ -14,9 +14,9 @@ export default function Navbar() {
           <div className="flex items-center gap-2.5 mt-1.5">
             <BellDot className="mr-10 text-[#666666] dark:text-[#617080] "/>
             {/* search bar */}
-            <div className="flex h-12 bg-white dark:bg-[#33404e] rounded-xl shadow-2xl">
+            <div className="flex items-center h-12 p-3 bg-white dark:bg-[#33404e] rounded-xl shadow-2xl">
             <input type="text" placeholder="search here" className=" px-8"/>
-            <Search className="absolute right-13 top-10 "/>
+            <Search className=""/>
             </div>
           </div>
         </header>

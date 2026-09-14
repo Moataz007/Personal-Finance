@@ -4,7 +4,7 @@ import { BiLogoAdobe } from "react-icons/bi";
 export default function UpcomingBill() {
   return (
     <>
-        <div className="w-full">
+        <div className="w-full md:ml-50 lg:ml-0">
             <div className="flex justify-between">
               <p className="inter-font font-normal text-[27px] text-[#878787] ">Upcoming Bill</p>
               <div className="flex items-center text-[#878787] gap-x-1">
