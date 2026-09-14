@@ -175,7 +175,7 @@ export default function CardsBalance() {
             {/* savings */}
             <div className=" flex flex-col items-center justify-center bg-white rounded-lg ">
                 {/* redit Card and Logo */}
-            <button className="text-white py-3 px-8 rounded-sm bg-[#299D91] cursor-pointer">
+            <button className="text-white py-3 px-8 rounded-sm sm:pt-3 bg-[#299D91] cursor-pointer">
                 <p>Add accounts</p>
             </button>
             <button className="py-3 px-8 text-[#9F9F9F] cursor-pointer">
