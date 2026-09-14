@@ -7,7 +7,7 @@ export default function CardsBalance() {
   return (
     <>
         <p className="inter-font font-normal text-[22px] text-[#878787] mb-4">Balances</p>
-        <div className="grid grid-cols-3 inter-font gap-x-6 gap-y-8 flex-wrap mr-6">
+        <div className="grid grid-cols-3 sm:grid-cols-1 inter-font gap-x-6 gap-y-8 flex-wrap mr-6">
             {/* Credit Card */}
             <div className="py-6 px-4 bg-white rounded-lg ">
                 {/* redit Card and Logo */}
