@@ -30,7 +30,7 @@ export default function Billcard() {
                 <img src={figma} />
                 </div>
                 {/*details*/}
-                <div className="flex flex-col items-start ml-18">
+                <div className="flex flex-col inter-font items-start ml-18">
                   <p className="font-extrabold text-[18px] text-[#191919]">Figma - Yearly plan</p>
                   <p className="font-normal text-[14px] text-[#9F9F9F]">For advanced security and more flexible <br/> controls, the Professional plan helps you <br/> scale design processes company-wide.</p>
                 </div>
@@ -49,7 +49,7 @@ export default function Billcard() {
                   <p className="font-extrabold text-[22px] text-black">16</p>
                 </div>
                 <div className="ml-30">
-                <img className="ml-5" src={adobe} />
+                <img className="" src={adobe} />
                 </div>
                 {/*details*/}
                 <div className="flex flex-col items-start ml-21">
