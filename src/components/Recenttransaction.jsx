@@ -1,4 +1,5 @@
 import {  CarFront, ChevronRight, Gamepad2, ShoppingBag, UtensilsCrossed } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Recenttransaction() {
   return (
@@ -9,7 +10,7 @@ export default function Recenttransaction() {
           Recent Transaction
         </p>
         <button className="flex items-center cursor-pointer text-[#878787] gap-x-1">
-          <p className="inter-font font-normal text-[17px] ">View All</p>
+          <Link to="/Transactions" className="inter-font font-normal text-[17px] ">View All</Link>
           <ChevronRight />
         </button>
       </div>

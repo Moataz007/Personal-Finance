@@ -49,7 +49,7 @@ export default function Billcard() {
                   <p className="font-extrabold text-[22px] text-black">16</p>
                 </div>
                 <div className="ml-30">
-                <img className="" src={adobe} />
+                <img src={adobe} />
                 </div>
                 {/*details*/}
                 <div className="flex flex-col items-start ml-21">

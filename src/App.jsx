@@ -8,7 +8,9 @@ import Homepage from './pages/Homepage'
 import Balances from './pages/Balances'
 import CheckingAccountDetails from './components/CheckingDetails'
 import Transactions from './pages/Transactions'
-import Bills from './components/Bills'
+import Bills from './pages/Bills'
+import Expenses from './pages/Expenses'
+import Goalspage from './pages/Goalspage'
 
 
 
@@ -25,6 +27,8 @@ export default function App() {
           <Route path="Transactions" element={<Transactions/>}/>
           <Route path="CheckingAccountDetails" element={<CheckingAccountDetails/>}/>
           <Route path="Bills" element={<Bills/>}/>
+          <Route path="Expenses" element={<Expenses/>}/>
+          <Route path="Goals" element={<Goalspage/>}/>
 
           <Route path="*" element={<Notfound/>}/>
         </Routes>

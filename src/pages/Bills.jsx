@@ -1,6 +1,6 @@
-import Billcard from "./Billcard";
-import Navbar2 from "./Navbar2";
-import Slidenav from "./Slidenav";
+import Billcard from "../components/Billcard";
+import Navbar2 from "../components/Navbar2";
+import Slidenav from "../components/Slidenav";
 
 
 export default function Bills() {

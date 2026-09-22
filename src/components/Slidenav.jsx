@@ -80,7 +80,7 @@ export default function Slidenav() {
           </button>
           {/* Expenses */}
           <button>
-            <NavLink to="/Transactions" className={({ isActive }) =>
+            <NavLink to="/Expenses" className={({ isActive }) =>
             `flex gap-3 hover:bg-[#299D91] h-full mb-4 py-3 cursor-pointer ${
             isActive
              ? "bg-[#299D91] text-white"
@@ -93,7 +93,7 @@ export default function Slidenav() {
           </button>
           {/* Goals */}
           <button>
-            <NavLink to="/Transactions" className={({ isActive }) =>
+            <NavLink to="/Goals" className={({ isActive }) =>
             `flex gap-3 hover:bg-[#299D91] h-full mb-4 py-3 cursor-pointer ${
             isActive
              ? "bg-[#299D91] text-white"

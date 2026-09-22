@@ -1,5 +1,6 @@
 import { ChevronRight } from "lucide-react";
 import { BiLogoAdobe } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 export default function UpcomingBill() {
   return (
@@ -8,7 +9,7 @@ export default function UpcomingBill() {
             <div className="flex justify-between">
               <p className="inter-font font-normal text-[27px] text-[#878787] ">Upcoming Bill</p>
               <div className="flex items-center text-[#878787] gap-x-1">
-                <p className="inter-font font-normal text-[27px] ">View All</p>
+                <Link to="/Bills" className="inter-font font-normal text-[27px] ">View All</Link>
                 <ChevronRight/>
               </div>
             </div>
