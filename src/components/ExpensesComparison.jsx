@@ -18,14 +18,14 @@ export default function ExpensesComparison() {
 
   return (
     <>
-    <div className="">
-      <div className="min-w-200 pr-7">
-        <div className="w-full mb-8">
+    <div className=" ">
+      <div className="min-w-200 pr-7 ">
+        <div className="w-full mb-8 ">
       <p className="mb-5 text-[24px] inter-font font-medium text-[#878787]">
         Expenses Comparison
       </p>
       {/* White Box */}
-      <div className="w-full rounded-2xl bg-white px-8 py-7">
+      <div className="w-full rounded-2xl bg-white px-8 py-7 overflow-x-auto">
 
         {/* Top Section */}
         <div className="flex items-center justify-between">
