@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Notfound from './pages/Notfound'
 
 import Loginpage from './pages/Loginpage'
-import Forgotpassword from './pages/Forgotpassword'
+import Forgotpassword from './pages/forgotpassword'
 import Signuppage from './pages/signuppage'
 import Homepage from './pages/Homepage'
 import Balances from './pages/Balances'
