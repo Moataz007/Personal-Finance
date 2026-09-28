@@ -120,7 +120,7 @@ export default function Slidenav() {
         </div>
         {/* logout and Avatar */}
         <div className="lg:mt-57 md:mt-36 ">
-        <Link to="/login" className="flex gap-3 active:bg-[#299D91] hover:bg-[#299D91] py-3 pl-3 mb-11 bg-white-8 opacity-75 ">
+        <Link to="/" className="flex gap-3 active:bg-[#299D91] hover:bg-[#299D91] py-3 pl-3 mb-11 bg-white-8 opacity-75 ">
           <LogIn className="text-white"/>
           <p className="small-word text-white">Logout</p>
         </Link>

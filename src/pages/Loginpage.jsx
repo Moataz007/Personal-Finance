@@ -31,7 +31,7 @@ export default function Loginpage() {
             Password
           </p>
           <Link
-            to="/forgotpassword"
+            to="/Forgot-password"
             className="small-word font-medium text-[#299D91] text-[12px]"
           >
             Forgot Password?

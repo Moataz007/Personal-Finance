@@ -38,7 +38,7 @@ export default function Signuppage() {
                 <p className="small-word font-normal text-[#999DA3] text-[14px] absolute -top-8 bg-[white] p-5 gap-2">or sign in with</p>
               </div>
               <Googlesignup/>
-              <p className="text-center small-word font-semibold text-[16px] leading-6 text-[#4B5768] mt-10">Already have an account? <Link to="/login" className="text-[#299D91]">Sign in here</Link></p>
+              <p className="text-center small-word font-semibold text-[16px] leading-6 text-[#4B5768] mt-10">Already have an account? <Link to="/" className="text-[#299D91]">Sign in here</Link></p>
             </div>
           </div>
     </div>

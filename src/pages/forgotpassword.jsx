@@ -26,7 +26,7 @@ export default function Forgetpassword() {
                   <div className="mt-8">
                   <Signup/>
                   </div>
-                  <Link to="/login" className="block text-center small-word font-semibold text-[16px] leading-6 text-[#878787] mt-6">Back to login</Link>
+                  <Link to="/" className="block text-center small-word font-semibold text-[16px] leading-6 text-[#878787] mt-6">Back to login</Link>
                 </div>
       </div>
     </div>
