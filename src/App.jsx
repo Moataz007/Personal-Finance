@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Notfound from './pages/Notfound'
 
 import Loginpage from './pages/Loginpage'
-import Forgetpassword from './pages/Forgotpassword'
+import Forgotpassword from './pages/Forgotpassword'
 import Signuppage from './pages/signuppage'
 import Homepage from './pages/Homepage'
 import Balances from './pages/Balances'
@@ -21,7 +21,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Loginpage/>}/>
           <Route path="Signup" element={<Signuppage/>}/>
-          <Route path="Forgot-password" element={<Forgetpassword/>}/>
+          <Route path="Forgot-password" element={<Forgotpassword/>}/>
           <Route path="Home" element={<Homepage/>}/>
           <Route path="Balances" element={<Balances/>}/>
           <Route path="Transactions" element={<Transactions/>}/>

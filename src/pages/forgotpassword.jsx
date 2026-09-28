@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Signup from "../components/Signup";
 
-export default function Forgetpassword() {
+export default function Forgotpassword() {
   return (
     <>
     <div className="flex flex-col justify-center h-screen items-center">
